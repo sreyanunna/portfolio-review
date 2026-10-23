@@ -6,3 +6,6 @@ __pycache__/
 Thumbs.db
 *.zip
 *:Zone.Identifier
+
+# pipeline outputs
+output/
