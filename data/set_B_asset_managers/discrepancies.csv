@@ -1,0 +1,17 @@
+company_id,file,location,discrepancy_type,what_was_planted,expected_pipeline_behaviour
+B1,Ashcombe_Q2_2026_KPIs.xlsx,Capital tab,threshold breach,Own funds coverage 112% vs board minimum 120%,Flag BREACH
+B1,Ashcombe_Board_Note_Q2.pdf,body,narrative contradicts numbers,Says capital 'comfortably above all internal minima',Flag contradiction
+B1,Performance tab,values,format,Percentages stored as decimals (0.58),Convert to %
+B1,AUM rollforward,labels,synonym label,"'Net new money', 'Gross sales', 'Redemptions'",Map to net_flows / gross_inflows / gross_outflows
+B2,lindqvist_moor_q2_2026.csv,AUM rows,mixed units,"AUM in EUR bn, flows/revenue in EUR m in the same file",Normalise to millions
+B2,lindqvist_moor_q2_2026.csv,5y performance,missing value,Blank; commentary explains fund merger,Leave null; flag
+B2,all,currency,currency,EUR,Convert to GBP
+B3,Harbourline_FQ3_2026_Investor_Update.pdf,AUM rollforward,does not tie,"132,500 + 1,600 + 3,050 = 137,150, but ending AUM printed as 137,650","Flag; components imply 137,150"
+B3,metadata.json,period,period definition,Fiscal year ends Sept: 'FQ3 2026' = calendar Q2 2026,Map fiscal to calendar
+B3,all,currency + dates,currency / date format,USD; MM/DD/YYYY,Convert to GBP; parse month-first
+B4,Kestrel_Point_Q2_letter.docx,summary table,outlier,"Redemptions 6,900 in table vs 690 in text; only 690 ties the rollforward",Flag; use value that ties
+B4,Kestrel_Point_Q2_letter.docx,paragraph 2,narrative contradicts numbers,Claims 'positive net flow momentum' while net flows are -280,Flag contradiction
+B4,whole pack,structure,unstructured source,All numbers in prose apart from one table,Extract from text
+B5,Solenne_Reporting_T2_2026.pdf,whole file,language,"French labels (encours, collecte nette, effet marché, commissions)",Map French labels
+B5,T2 vs T1 ORIGINAL pdf,opening AUM,restatement,"Opening AUM restated 15,900 -> 15,600",Use restated; flag
+B5,Solenne_Reporting_T2_2026.pdf,numbers,format,"Space as thousands separator, decimal comma",Parse locale

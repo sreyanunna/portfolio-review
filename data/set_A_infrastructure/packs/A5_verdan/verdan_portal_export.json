@@ -1,0 +1,81 @@
+{
+  "entity": "Verdan Recycling Holdings Ltd",
+  "report_date": "06/30/2026",
+  "currency": "GBP",
+  "unit": "millions",
+  "data": [
+    {
+      "metric": "Revenue",
+      "period": "H1 2026 YTD",
+      "actual": 202.0,
+      "budget": 198.0
+    },
+    {
+      "metric": "Revenue",
+      "period": "Q1 2026",
+      "actual": 98.0,
+      "budget": 97.0
+    },
+    {
+      "metric": "EBITDA",
+      "period": "H1 2026 YTD",
+      "actual": 35.2,
+      "budget": 36.5
+    },
+    {
+      "metric": "EBITDA",
+      "period": "Q1 2026",
+      "actual": 17.0,
+      "budget": 17.5
+    },
+    {
+      "metric": "Capex",
+      "period": "H1 2026 YTD",
+      "actual": 11.3,
+      "budget": 13.5
+    },
+    {
+      "metric": "Capex",
+      "period": "Q1 2026",
+      "actual": 5.0,
+      "budget": 6.0
+    },
+    {
+      "metric": "Operating cash flow",
+      "period": "H1 2026 YTD",
+      "actual": 27.9,
+      "budget": null
+    },
+    {
+      "metric": "Operating cash flow",
+      "period": "Q1 2026",
+      "actual": 13.0,
+      "budget": null
+    },
+    {
+      "metric": "Net debt",
+      "period": "as at 06/30/2026",
+      "actual": 210.0
+    },
+    {
+      "metric": "EBITDA LTM",
+      "period": "as at 06/30/2026",
+      "actual": 70.0
+    },
+    {
+      "metric": "Max leverage covenant",
+      "period": "facility",
+      "actual": "3.5x"
+    },
+    {
+      "metric": "Employees",
+      "period": "as at 06/30/2026",
+      "actual": 2040
+    },
+    {
+      "metric": "LTIR",
+      "period": "H1 2026 YTD",
+      "actual": 1.1
+    }
+  ]
+}

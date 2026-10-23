@@ -1,0 +1,15 @@
+From: cfo@meridianbus.example
+To: portfolio.monitoring@fund.example
+Date: Fri, 24 Jul 2026 17:42
+Subject: Q1 FY27 numbers
+
+Hi both,
+
+Quick summary ahead of the full pack. Q1 FY27 (April-June) turnover came in at £88.6m against a plan of £90.0m; patronage on the Leeds network is still recovering after the timetable change. EBITDA was £11.2m (plan £12.4m). Capex was £9.5m versus £7.0m planned because we brought forward 14 electric buses.
+
+Net debt finished at £64.0m. Headcount data is delayed due to the HR system migration; I'll send it next week.
+
+One flag: LTIR jumped to 7.8 this quarter. We're checking whether that's real or a reporting error from the new system.
+
+Best,
+J.

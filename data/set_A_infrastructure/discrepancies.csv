@@ -1,0 +1,24 @@
+company_id,file,location,discrepancy_type,what_was_planted,expected_pipeline_behaviour
+A1,Halden_MA_Jun26.xlsx,P&L tab,semi-structured layout,"Merged header cells, units only in a title row, hidden D&A row, free-text note in A15",Read units from title; ignore hidden row only if it is not needed
+A1,Debt tab + board pack,covenant,threshold breach,Leverage 312.0/56.0 = 5.57x vs 5.50x max,Flag BREACH
+A1,Halden_Board_Pack_Q2_2026.pdf,Finance section,narrative contradicts numbers,Says leverage 'comfortably within' covenant,Flag contradiction; numbers win
+A1,metadata.json,dates,date format,DD/MM/YYYY,Parse as day-first
+A2,corvane_finance_export_2026Q2.csv,whole file,format,"Semicolon delimiter, decimal comma, values in kEUR",Divide by 1000; parse decimal comma
+A2,corvane_finance_export_2026Q2.csv,EBITDA rows,synonym label,EBITDA reported as 'Adjusted operating result before D&A',Map to ebitda via KPI dictionary
+A2,corvane_finance_export_2026Q2.csv,Capex BUD row,missing value,Capex plan blank (explained in commentary),Leave null; flag; capex_vs_plan not computable
+A2,all,currency,currency,EUR,"Convert to GBP: flows at Q2 average, net debt at 30/06 close"
+A2,metadata.yaml,dates / keys,date format + different metadata keys,"DD.MM.YYYY; keys differ from other packs (reporting_ccy, unit)",Normalise metadata keys
+A3,Frostline_Rapport_T2_2026.pdf,whole file,language,"French labels (Chiffre d'affaires, EBE, Dette nette), decimal comma",Map French labels
+A3,Frostline_Rapport_T2_2026.pdf,capex,outlier / unit error,"Capex shown 48,0 vs plan 5,0 and commentary 'in line with plan' -> true 4.8",Flag outlier; do not silently correct
+A3,T2 vs T1 ORIGINAL pdf,Q1 revenue/EBITDA,restatement,"Q1 revenue 26.9 -> 26.1, EBITDA 7.6 -> 7.2",Use restated figures for QoQ; flag restatement
+A3,metadata.json,dates,date format,'30 juin 2026' (French text date),Parse localised date
+A4,metadata.json + xlsx,period,period definition,Fiscal year starts April: 'Q1 FY27' = calendar Q2 2026; prior column 'Q4 FY26' = calendar Q1 2026,Map fiscal to calendar quarter
+A4,Meridian_Q1FY27_MA.xlsx,whole sheet,units + dates,Values in £000; period-end dates stored as Excel serial numbers,Divide by 1000; convert serial dates
+A4,email_from_CFO_Q1FY27.txt,body,unstructured source,"Key numbers only in email prose, in £m",Extract from text; reconcile with xlsx
+A4,xlsx Headcount row,headcount,missing value,Headcount blank (HR migration),Leave null; flag
+A4,Safety tab,LTIR,anomaly,LTIR 7.8 vs 0.7-0.9 in prior quarters; CFO unsure if real,Flag anomaly for follow-up
+A4,Cash/capex,capex,variance,Capex 36% over plan (explained: electric buses brought forward),Report variance with explanation
+A5,verdan_portal_export.json,P&L/cash items,period definition,Only H1 YTD and Q1 given,Derive Q2 = H1 YTD - Q1
+A5,verdan_portal_export.json,dates,date format,MM/DD/YYYY (US),Parse month-first
+A5,covenant,leverage,threshold near-breach,3.0x vs 3.5x max (0.5x headroom),Flag tight headroom
+A5,LTIR,period,period definition,"LTIR given H1 YTD, not quarterly",Label as H1 YTD; do not treat as Q2

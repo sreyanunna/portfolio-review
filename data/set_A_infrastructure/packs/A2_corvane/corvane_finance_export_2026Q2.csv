@@ -1,0 +1,15 @@
+line_item;period;scenario;value_kEUR;as_of
+Revenue;Q2-2026;ACT;61800,0;30.06.2026
+Revenue;Q2-2026;BUD;60500,0;30.06.2026
+Revenue;Q1-2026;ACT;59200,0;31.03.2026
+Adjusted operating result before D&A;Q2-2026;ACT;34100,0;30.06.2026
+Adjusted operating result before D&A;Q2-2026;BUD;33000,0;30.06.2026
+Adjusted operating result before D&A;Q1-2026;ACT;32600,0;31.03.2026
+Cash from operations;Q2-2026;ACT;30200,0;30.06.2026
+Capex;Q2-2026;ACT;28700,0;30.06.2026
+Capex;Q2-2026;BUD;;30.06.2026
+Net financial debt;Q2-2026;ACT;820000,0;30.06.2026
+Adjusted operating result before D&A LTM;Q2-2026;ACT;131000,0;30.06.2026
+Leverage covenant (max);Q2-2026;;7,00x;30.06.2026
+Headcount (FTE);Q2-2026;ACT;388;30.06.2026
+LTIR;Q2-2026;ACT;0,10;30.06.2026

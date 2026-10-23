@@ -1,0 +1,12 @@
+metric,value,unit,period_end
+opening_aum,21.4,EUR bn,2026-03-31
+gross_inflows,980,EUR m,2026-06-30
+gross_outflows,1640,EUR m,2026-06-30
+market_effect,410,EUR m,2026-06-30
+closing_aum,21.15,EUR bn,2026-06-30
+average_aum,21.25,EUR bn,2026-06-30
+net_revenue,23.9,EUR m,2026-06-30
+operating_costs,17.6,EUR m,2026-06-30
+pct_aum_outperforming_1y,44,%,2026-06-30
+pct_aum_outperforming_3y,51,%,2026-06-30
+pct_aum_outperforming_5y,,%,2026-06-30
